@@ -69,6 +69,8 @@ prometheus-client==0.11.0
 prompt-toolkit==3.0.19
 pycparser==2.20
 pydantic==1.8.2
+pywinpty==1.1.3
+pywin32==301
 Pygments==2.9.0
 pyparsing==2.4.7
 pyrsistent==0.18.0
