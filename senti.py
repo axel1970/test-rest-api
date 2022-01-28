@@ -10,12 +10,12 @@ import pandas as pd
 import spacy
 
 nlp = spacy.load('en_core_web_sm')
-data_yelp = pd.read_csv('C:/Users/anike/OneDrive/Desktop/app/app/yelp_labelled.txt',sep='\t',header=None)
+data_yelp = pd.read_csv('https://raw.githubusercontent.com/axel1970/test-rest-api/main/yelp_labelled.txt',sep='\t',header=None)
 columan_name = ['Review', 'Sentiment']
 data_yelp.columns = columan_name
-data_amazon = pd.read_csv('C:/Users/anike/OneDrive/Desktop/app/app/amazon_cells_labelled.txt',sep='\t',header=None)
+data_amazon = pd.read_csv('https://raw.githubusercontent.com/axel1970/test-rest-api/main/amazon_cells_labelled.txt',sep='\t',header=None)
 data_amazon.columns = columan_name
-data_imdb = pd.read_csv('C:/Users/anike/OneDrive/Desktop/app/app/imdb_labelled.txt',sep='\t',header=None)
+data_imdb = pd.read_csv('https://raw.githubusercontent.com/axel1970/test-rest-api/main/imdb_labelled.txt',sep='\t',header=None)
 data_imdb.columns = columan_name
 data = data_yelp.append([data_amazon, data_imdb],ignore_index=True)
 print(data)
