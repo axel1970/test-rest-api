@@ -38,12 +38,11 @@ def home():
         return render_template('index.html', message="Positive😄")
     elif pred[0] == 0:
         return render_template('index.html', message="Negative☹️")
-    elif pred[0] == 0.5:
-        return render_template('index.html', message="Neutral")
+   
 
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
   
-    text_data_cleaning = text_data_cleaning()
-    utils.save_document(text_data_cleaning)
+    #text_data_cleaning = text_data_cleaning()
+    #utils.save_document(text_data_cleaning)
